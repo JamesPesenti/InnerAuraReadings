@@ -31,6 +31,7 @@ h5, h6 {
 /* About Me */
 
 .About {
+  text-align: center;
   background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 100px;
@@ -41,11 +42,12 @@ h5, h6 {
 
 
 .blog-slider {
+  text-align: center;
   font-size: 15px;
   color: #5026b0;
   width: 100%;
   position: relative;
-  max-width: 800px;
+  max-width: 2000px;
   margin: auto;
   /* background: #fff; */
   background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
@@ -142,6 +144,7 @@ padding-top: 200px;
   /* background-image: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%); */
   /* background-image: linear-gradient(150deg, purple 50%, blue 50%); */
   /* background-image:(150deg, yellow 50%, red 50%); */
+  text-align: center;
   background-image: white;
   color: white;
   padding: 3% 15% 30%;
@@ -155,6 +158,7 @@ padding-top: 200px;
 
 #white-section {
   color: #2FE3FE;
+  text-align: center;
   font-size: larger;
   background-color: white;
   padding: 3% 15% 7%;
@@ -195,11 +199,14 @@ padding-top: 200px;
 /* Testimonials */
 
 #Testimonials {
+  text-allign: center;
+  width: 100%;
   background: aliceblue;
   padding: 10px 100px 100px 100px;
 }
 
 .Testimonials h1 {
+  text-allign: center;
   font-size: 40px;
   margin: 40px;
 }
@@ -213,6 +220,7 @@ padding-top: 200px;
 
 
 .gtco-testimonials {
+  max-width: 100%;
   position: relative;
   margin-top: 30px;
 }
@@ -386,6 +394,7 @@ padding-top: 200px;
   padding-top: 200px;
   text-align: center;
   font-size: 20px;
+  max-width: 100%;
   /* color: purple; */
 }
 
@@ -544,6 +553,7 @@ p {
 /* map */
 
 #map {
+  text-align: center;
   margin-top: 0px;
   padding: 50px;
   fill: white;
