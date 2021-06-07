@@ -216,7 +216,7 @@ h6 {
 }
 
 .About {
-  /* @media (min-width: 320px — 1000px) { */
+  @media (min-width: 320px — 1000px) {
   text-align: center;
   width: 100%;
   background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
@@ -254,20 +254,26 @@ h6 {
 /* Testimonials */
 
 #Testimonials {
-  @media (min-width: 320px — 1000px) {
+  @media (min-width: 320px — 1200px) {
   overflow-x: hidden;
-  margin-top: 300px;
+  /* margin-top: 300px; */
   text-align: center;
   width: 100%; 
   background: aliceblue;
   padding: 10px 100px 100px 100px;
 }
 }
+
+.Testimonials {
+  padding: 0px;
+}
 .card-text-center{
   padding: 200px;
 }
 
 .Testimonials h1 {
+  /* @media (min-width: 320px — 1000px) { */ 
+  text-align: center;
   font-size: 40px;
   margin: 120px;
 }
@@ -342,7 +348,7 @@ h6 {
   border-radius: 180%;
   margin: 15px auto 0;
   box-shadow: 0 8px 20px -4px #95abbb;
-  width: 400px;
+  /* width: 400px; */
   height: 160px;
 }
 
