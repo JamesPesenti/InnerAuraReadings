@@ -1,4 +1,4 @@
-body {
+body { 
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -89,7 +89,7 @@ p {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px;
+  margin-bottom: -7;
   /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
@@ -202,7 +202,7 @@ h6 {
   text-align: center;
   font-size: 15px;
   color: #5026b0;
-  width: 90%;
+  width: 100%;
   position: relative;
   /* max-width: 750px; */
   margin: auto;
@@ -216,16 +216,17 @@ h6 {
 }
 
 .About {
+  /* @media (min-width: 320px — 1000px) { */
   text-align: center;
   width: 100%;
   background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 100px;
-  margin: 500px 0 200px;
+  margin: 200px 0 200px;
   border-radius: 25px;
-  height: 800px;
+  height: 700px;
 }
-
+}
 /* Chakra Btn */
 
 .c-social-links__link {
@@ -253,23 +254,28 @@ h6 {
 /* Testimonials */
 
 #Testimonials {
+  @media (min-width: 320px — 1000px) {
+  overflow-x: hidden;
   margin-top: 300px;
   text-align: center;
   width: 100%; 
   background: aliceblue;
   padding: 10px 100px 100px 100px;
 }
+}
+.card-text-center{
+  padding: 200px;
+}
 
 .Testimonials h1 {
   font-size: 40px;
-  margin: 40px;
+  margin: 120px;
 }
 
 .card-img-top {
   width: 100%;
   height: 300px;
   opacity: 1;
-  max-width: 100%;
   /* height: auto; */
 }
 
@@ -278,9 +284,10 @@ h6 {
   position: relative;
   margin-top: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .gtco-testimonials {
     margin-top: 20px;
+    margin: 0 auto;
   }
 }
 .gtco-testimonials h2 {
@@ -322,8 +329,8 @@ h6 {
 .gtco-testimonials .card {
   background: #fff;
   box-shadow: 0 8px 30px -7px #c9dff0;
-  margin: 0 20px;
-  padding: 0 10px;
+  margin: 200 20px;
+  /* padding: 100 10px; */
   border-radius: 20px;
   border: 0;
 }
@@ -332,7 +339,7 @@ h6 {
 
 .gtco-testimonials .card .card-img-top {
   max-width: 100px;
-  border-radius: 80%;
+  border-radius: 180%;
   margin: 15px auto 0;
   box-shadow: 0 8px 20px -4px #95abbb;
   width: 400px;
@@ -419,7 +426,7 @@ circle:hover {
 #info-box {
   text-align: center;
   display: none;
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
   z-index: 6;
