@@ -139,8 +139,7 @@ p {
 }
 
 /*Shrinking for mobile*/
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 200px) and (max-width: 1000px) {
   .waves {
     height: 80px;
     min-height: 40px;
@@ -254,7 +253,7 @@ h6 {
 /* Testimonials */
 
 #Testimonials {
-  @media (min-width: 320px — 1200px) {
+  @media (min-width: 320px — 1000px) {
   overflow-x: hidden;
   /* margin-top: 300px; */
   text-align: center;
@@ -273,9 +272,10 @@ h6 {
 
 .Testimonials h1 {
   /* @media (min-width: 320px — 1000px) { */ 
-  text-align: center;
+  position: center;
+  text-align: left;
   font-size: 40px;
-  margin: 120px;
+  /* margin: 100px; */
 }
 
 .card-img-top {
@@ -554,3 +554,559 @@ a {
 }
 
 
+
+
+
+
+
+
+
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  text-size-adjust: large;
+  text-align: center;
+  color: #000;
+  background-image: #f4f4f4;
+  transition: background-color 1s ease;
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {  
+
+  /* Your CSS Code for this device size */    
+
+ }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {  
+
+  /* Your CSS Code for this device size */    
+
+}
+}
+
+
+/* Waves */
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  /* color: #333333; */
+  color: white;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+  background: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+  color: white;
+}
+
+.inner {
+  position: static;
+  margin-top: -20%;
+  margin-bottom: -1%;
+  left: 160px;
+  opacity: 1;
+}
+
+.inner-header {
+  font-size: 45px;
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-header flex {
+  font-size: 600px;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Waves Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+  .waves {
+    height: 80px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* End Waves */
+
+
+h7 {
+  color: #fff;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #5026b0;
+}
+
+h3,
+h4,
+h7 {
+  color: white;
+}
+
+h5,
+h6 {
+  color: black;
+}
+
+/* Nav Bar */
+
+#white-section {
+  padding: 50px 50px;
+  width: 100%;
+  text-align: center;
+  color: #2FE3FE;
+  font-size: larger;
+  /* background-color: white; */
+}
+
+.navbar-toggler {
+  background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+}
+
+
+/* Welcome and About Me */
+
+
+.blog-slider {
+  text-align: center;
+  font-size: 15px;
+  color: #5026b0;
+  width: 100%;
+  position: relative;
+  /* max-width: 750px; */
+  margin: auto;
+  /* background: #fff; */
+  background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding-top: 100px;
+  border-radius: 25px;
+  height: 800px;
+  transition: all .3s;
+}
+
+.About {
+  @media (min-width: 320px — 1000px) {
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 100px;
+  margin: 200px 0 200px;
+  border-radius: 25px;
+  height: 700px;
+}
+}
+/* Chakra Btn */
+
+.c-social-links__link {
+  padding: 35px;
+}
+
+
+.txt--gradient-blue {
+  background-image: linear-gradient(to right, #85edff, #16bff3);
+  color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.carousel-item {
+  margin: 50 50 50 50;
+}
+
+#carouselExampleIndicators {
+  padding: 30px;
+}
+
+
+/* Testimonials */
+
+#Testimonials {
+  @media (min-width: 320px — 1200px) {
+  overflow-x: hidden;
+  /* margin-top: 300px; */
+  text-align: center;
+  width: 100%; 
+  background: aliceblue;
+  padding: 10px 100px 100px 100px;
+}
+}
+
+.Testimonials {
+  padding: 0px;
+}
+.card-text-center{
+  padding: 200px;
+}
+
+.Testimonials h1 {
+  /* @media (min-width: 320px — 1000px) { */ 
+  text-align: center;
+  font-size: 40px;
+  margin: 120px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  opacity: 1;
+  /* height: auto; */
+}
+
+
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+@media (max-width: 1200px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+}
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+.gtco-testimonials .owl-dots span {
+  padding: 300px;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+.gtco-testimonials .owl-dots .active {
+  box-shadow: none;
+}
+.gtco-testimonials .owl-dots .active span {
+  background: #01b0f8;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 200 20px;
+  /* padding: 100 10px; */
+  border-radius: 20px;
+  border: 0;
+}
+
+/* Img Size */
+
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 180%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  /* width: 400px; */
+  height: 160px;
+}
+
+.gtco-testimonials .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+.gtco-testimonials .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gtco-testimonials .center {
+  opacity: 1;
+}
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+.owl-carousel {
+  outline: 0;
+}
+.owl-nav button.owl-next {
+  outline: 0;
+}
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+/* Map */
+
+#map {
+  margin-top: 0px;
+  padding: 50px;
+  fill: white;
+  background: rgb(229, 240, 250);
+}
+
+#us-map {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+ 
+}
+
+path:hover,
+circle:hover {
+  stroke: #227da7 !important;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  fill: grey!important;
+  cursor: pointer;
+}
+
+#path67 {
+  fill: none !important;
+  stroke: #2cb3f0 !important;
+  cursor: default;
+}
+
+#info-box {
+  text-align: center;
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  background-color: white;
+  color: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 5px;
+  padding: 35px;
+  font-family: arial;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+}
+
+
+/* Prices */
+
+
+#prices {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+
+#card {
+  color: #A16BFE;
+}
+
+.card-body {
+  background: aliceblue;
+}
+
+.section-heading {
+  color: #A16BFE;
+  margin-bottom: 100px;
+}
+
+.price-text {
+  padding: 3% 2%;
+  padding-bottom: -35%;
+  font-size: 45px;
+  color: #A16BFE;
+  margin-top: -2%;
+  margin-bottom: 10%;
+  margin: 50 50 50 50;
+}
+
+.card-header {
+  /* background-color: #5026b0; */
+  background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+  color: white;
+}
+
+#prices2 {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 300px;
+  padding-top: 300px;
+}
+
+
+/* Footer */
+
+#footer{
+  padding-top: 200px;
+  text-align: center;
+}
+
+
+
+/* #Social */
+
+.c-social-links__link {
+  background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
+  /* color: #1c2432; */
+  color: white;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  text-indent: 1px;
+  margin-right: 20px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.l-footer * {
+  font-size: 15px;
+}
+a {
+  color: #ffab91;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
