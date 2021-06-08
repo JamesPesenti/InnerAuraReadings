@@ -1,4 +1,4 @@
-body { 
+html, body { 
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -57,10 +57,11 @@ p {
 }
 
 .inner {
-  position: static;
+  /* !!!!! This caused the white space bug!!!!! */
+  /* position: static; */
   margin-top: -20%;
   margin-bottom: -1%;
-  left: 160px;
+  /* left: 160px; */
   opacity: 1;
 }
 
@@ -215,7 +216,7 @@ h6 {
 }
 
 .About {
-  @media (min-width: 320px — 1000px) {
+  @media (min-width: 290px — 1000px) {
   text-align: center;
   width: 100%;
   background-image: linear-gradient(60deg, rgb(96, 218, 248) 0%, rgb(137, 116, 187) 100%);
@@ -246,7 +247,7 @@ h6 {
 }
 
 #carouselExampleIndicators {
-  padding: 30px;
+  padding: 100px 100px 100px 100px;
 }
 
 
@@ -319,7 +320,7 @@ h6 {
   display: block;
   background: #fff;
   border: 2px solid #01b0f8;
-  margin: 0 5px;
+  margin: 0;
 }
 .gtco-testimonials .owl-dots .active {
   box-shadow: none;
@@ -334,7 +335,7 @@ h6 {
 .gtco-testimonials .card {
   background: #fff;
   box-shadow: 0 8px 30px -7px #c9dff0;
-  margin: 200 20px;
+  margin: 200px 20px;
   /* padding: 100 10px; */
   border-radius: 20px;
   border: 0;
@@ -396,6 +397,7 @@ h6 {
 /* Map */
 
 #map {
+  overflow-x: hidden;
   margin-top: 0px;
   padding: 50px;
   fill: white;
@@ -443,13 +445,13 @@ circle:hover {
   font-family: arial;
 }
 
-@media
+/* @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
 
-}
+} */
 
 
 /* Prices */
@@ -508,6 +510,10 @@ only screen and (min-device-pixel-ratio: 1.5){
   text-align: center;
 }
 
+.row {
+  margin: auto;
+}
+
 
 
 /* #Social */
@@ -522,7 +528,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   position: relative;
   border-radius: 50%;
   text-indent: 1px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -546,3 +552,5 @@ a {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+
+
